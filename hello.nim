@@ -51,11 +51,11 @@ proc handleHttps() =
     #[
         let body = %*{
         "username": "rghosh",
-        "password": "P@ssword2"
+        "password": ""
     }
     ]#
-    echo client.postContent("https://preprod.uno.walmart.com/uno-webservices/ws/security/checkLogin?username=rghosh&password=P%40ssword4", body = "")
-    #echo client.postContent(url = "http://qa-int.uno.walmart.com:8080/uno-webservices/ws/security/checkLogin?username=rghosh&password=P%40ssword2", body = "")
+    echo client.postContent("https:///uno-webservices/ws/security/checkLogin?username=rghosh&password=", body = "")
+    #echo client.postContent(url = "http:///uno-webservices/ws/security/checkLogin?username=rghosh&password=", body = "")
 
 proc tests() =
     #recursively searching through "/Users/rghosh/notespump/queue/" matching pattern *.txt
